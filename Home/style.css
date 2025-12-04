@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfdfd;
+    color: #222;
+}
+
+header {
+    width: 100%;
+    background: rgb(39, 39, 39);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+.logo {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a:hover {
+    color: #1e3f66;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.gallery {
+    padding: 20px 40px;
+    max-width: 1500px;
+    margin: 0;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-card {
+    position: relative;
+}
+
+.gallery-card img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.gallery-card span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.container {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.hero {
+    height: 55vh;
+    margin: 10px;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.hero-text {
+    background: rgba(255, 255, 255, 0);
+    padding: 25px 60px;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.col-text {
+    padding: 20px;
+    margin: 40px;
+    text-align: left;
+}
+
+.btn {
+    padding: 12px 25px;
+    background-color: #1e3f66;
+    color: white;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    color: bisque;
+}
+
+.featured {
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.feature-card {
+    position: relative;
+}
+
+.feature-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.feature-card span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #fafafa;
+    margin-top: 40px;
+}
