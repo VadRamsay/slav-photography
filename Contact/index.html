@@ -20,36 +20,52 @@
     </nav>
 </header>
 
-<div class="container">
-    <section class="contact-section">
-        <h1>Want to Get in Touch?</h1>
 
+<div class="contact-page">
+    <h1>Contact Me</h1>
+        
     <form class="contact-form">
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
+      <label for="name">Your Name *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="phone">Phone Number *</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="contact_method">How would you prefer to communicate? </label>
+      <select id="contact_method" name="contact_method">
+        <option value="">Select Option</option>
+        <option value="text">Text Messaging</option>
+        <option value="email">Email</option>
+      </select>
+
+      <label class="session_type">What type of session are you looking for?</label>
+      
+      <select id="session_type" name="session_type">
+        <option value="">Select Option</option>
+        <option value="solo">Solo Portraits</option>
+        <option value="couple">Couple</option>
+        <option value="wedding">Wedding</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label class="referral">How did you hear about me? ... or you don't have to. </label>
+      
+      <select id="referral" name="referral">
+        <option value="">Select Option</option>
+        <option value="google">Google Search</option>
+        <option value="friend">From a Friend</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Tell me more!</label>
+      <textarea id="message" name="message" rows="6"></textarea>
+
+      <button type="submit">Send Message</button>
     </form>
-    </section>
 </div>
-
-<section class="featured">
-    <h2>Featured Gallery</h2>
-
-    <div class="gallery-grid">
-        <a class="feature-card" href="#">
-          <img src="" alt="Some Picture">
-        </a>
-
-        <a class="feature-card" href="#">
-          <img src="" alt="Some Picture">
-        </a>
-
-        <a class="feature-card" href="#">
-          <img src="" alt="Some Picture">
-        </a>
-    </div>
-</section>
 
 <footer>
     <p>© Slav Photography</p>
