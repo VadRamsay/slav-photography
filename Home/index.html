@@ -4,94 +4,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Slav Photography</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
 <header>
+  <div class="page-container">
     <nav>
-        <div class="logo">LOGO</div>
+        <div class="logo">SLAV PHOTOGRAPHY</div>
         <ul>
             <li><a href="/Home/index.html">Home</a></li>
             <li><a href="/About/index.html" target="_blank">About</a></li>
-            </li><a href="/Portfolio/index.html" target="_blank">Portfolio</a>
+            <li><a href="/Portfolio/index.html" target="_blank">Portfolio</a></li>
             <li><a href="/Contact/index.html" target="_blank">Contact</a></li>
         </ul>
     </nav>
+  </div>
 </header>
 
-<section class="gallery">
-    <div class="gallery-grid">
-        <a class="gallery-card" href="#">
-          <img src="/Images/City.jpg" alt="City Street">
-        </a>
+<div class="page-container">
+<section class="gallery-section">
+    <h2 class="gallery-title">Gallery</h2>
 
-        <a class="gallery-card" href="#">
-          <img src="/Images/Web.jpg" alt="Spider Web">
-        </a>
+    <div id="photoCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
 
-        <a class="gallery-card" href="#">
-          <img src="/Images/Hand.jpg" alt="Hand Shadow">
-        </a>
+            <div class="carousel-item active">
+                <img src="/Images/City.jpg" class="d-block w-100" alt="City">
+            </div>
 
-        <a class="gallery-card" href="#">
-          <img src="/Images/Mountains.jpg" alt="Hand Shadow">
-        </a>
+            <div class="carousel-item">
+                <img src="/Images/Web.jpg" class="d-block w-100" alt="Web">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/Images/Hand.jpg" class="d-block w-100" alt="Hand">
+            </div>
+
+            <div class="carousel-item">
+                <img src="/Images/Mountains.jpg" class="d-block w-100" alt="Mountains">
+            </div>
+
+        </div>
+
+        <!-- Controls to Carousel  -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#photoCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#photoCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
 
     </div>
 </section>
 
-<div class="container">
-    <section class="hero">
-
-    <div class="hero-text"></div>
-        <div class="col-text">
+<!-- HERO SECTION -->
+<section class="hero">
+    <div class="hero-content">
         <h5>
-        HI, I'M GABE! <br><br> I CAN'T WAIT TO WORK WITH YOU! <br><br>
-        During my freshman year of college, a simple photography project in a fine arts class 
-        sparked an exciting new passion and marked the beginning of an exciting journey. Now, 
-        almost 10 years later, I get to share this passion with the world. Photography has a 
-        way of helping a person communicate their truest perspective in life. My desire is to 
-        help my clients capture theirs!<br><br>
+            HI, I'M GABE! <br><br>
+            I CAN'T WAIT TO WORK WITH YOU! <br><br>
+            During my freshman year of college, a simple photography project in a fine arts class 
+            sparked an exciting new passion and marked the beginning of a journey. Now, almost 10 years later, 
+            I get to share this passion with the world. Photography has a way of helping a person communicate 
+            their truest perspective. My desire is to help my clients capture theirs!<br><br>
         </h5>
+
         <a href="/Portfolio/index.html" target="_blank" class="btn">Learn More</a>
     </div>
-    
-    <div class="col-img">
+
+    <div class="hero-image">
         <img src="/Images/Slav Photography (2).png" alt="Logo Img">
     </div>
-    </section>
-</div>
+</section>
 
 <section class="featured">
     <h2>See My Work</h2>
 
     <div class="featured-grid">
         <a class="feature-card" href="#">
-          <img src="/Images/Huge City Lights.jpg" alt="City Street">
+            <img src="/Images/Huge City Lights.jpg" alt="City Lights">
         </a>
 
         <a class="feature-card" href="#">
-          <img src="/Images/Sun.jpg" alt="Spider Web">
+            <img src="/Images/Sun.jpg" alt="Sun">
         </a>
 
         <a class="feature-card" href="#">
-          <img src="/Images/Waves.jpg" alt="Hand Shadow">
+            <img src="/Images/Waves.jpg" alt="Waves">
         </a>
     </div>
 </section>
+</div>
 
 <footer>
+  <div class="page-container">
     <p>© Slav Photography</p>
+  </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
-
