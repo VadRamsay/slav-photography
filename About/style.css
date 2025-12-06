@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
 }
 
 body {
@@ -12,11 +11,10 @@ body {
 
 header {
     width: 100%;
-    background: rgb(39, 39, 39);
-    border-bottom: 5px solid #9e460b;
     position: sticky;
-    top: 0px;
-    z-index: 10;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(38, 38, 133, 1) 35%, rgba(89, 89, 89, 1) 100%);
 }
 
 nav {
@@ -24,7 +22,16 @@ nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 nav ul {
@@ -36,23 +43,17 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-nav a.active {
-    border-bottom: 2px solid #000;
+nav a:hover {
+    color: #1e3f66;
 }
 
-.about-section {
-    max-width: 1200px;
-    padding: 60px 20px;
+.page-container {
+    max-width: 1400px;
     margin: auto;
-    display: flex;
-    gap: 40px;
-}
-
-.about-section img {
-    width: 350px;
-    border-radius: 8px;
+    padding: 0 40px;
 }
