@@ -57,3 +57,75 @@ nav a:hover {
     margin: auto;
     padding: 0 40px;
 }
+
+.about-intro {
+    text-align: center;
+    padding: 5rem 0 3rem;
+}
+
+.about-intro h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.about-intro p {
+    max-width: 750px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: #173b64;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.contact-btn:hover {
+    background: #005dcc;
+}
+
+.about-image {
+    text-align: center;
+    padding: 2rem;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.social-links {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.social-links a {
+    margin: 0 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #162b44;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    text-decoration: none;
+    color: #2f32c7;
+}
+
+.site-footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: #fafafa;
+    border-top: 1px solid #ddd;
+}

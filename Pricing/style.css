@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fdfdfd;
+    color: #222;
+}
+
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(38, 38, 133, 1) 35%, rgba(89, 89, 89, 1) 100%);
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1e3f66;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.hero {
+    background: url("/Images/sarah-gabe-wedding-08032018-mrandmrsarcher-95.JPG") center/cover no-repeat;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(218, 218, 218);
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.packages-section {
+    padding: 60px 20px;
+}
+
+.package-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.package-card:hover {
+    transform: translateY(-3px);
+}
+
+.package-card h2 {
+    margin-bottom: 8px;
+    font-size: 1.6rem;
+}
+
+.package-card p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.package-card ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #1b3bc9;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #fafafa;
+    margin-top: 40px;
+    font-size: 14px;
+}
