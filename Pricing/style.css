@@ -83,7 +83,8 @@ nav a:hover {
 }
 
 .package-card {
-    background: #fff;
+    background: #eeeeee;
+    margin-bottom: 2%;
     padding: 25px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
