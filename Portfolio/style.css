@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: cursive;
 }
 
 body {
@@ -12,11 +11,10 @@ body {
 
 header {
     width: 100%;
-    background: rgb(39, 39, 39);
-    border-bottom: 5px solid #9e460b;
     position: sticky;
-    top: 0px;
-    z-index: 10;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(38, 38, 133, 1) 35%, rgba(89, 89, 89, 1) 100%);
 }
 
 nav {
@@ -24,7 +22,16 @@ nav {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    padding: 35px;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 400;
 }
 
 nav ul {
@@ -36,10 +43,42 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
+    color: #fff;
+    font-weight: 400;
+    transition: color 0.3s ease;
 }
 
-nav a.active {
-    border-bottom: 2px solid #000;
+nav a:hover {
+    color: #1e3f66;
+}
+
+.page-container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+.gallery-page {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+    margin: 40px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    /* makes each image fit its grid cell */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
 }
