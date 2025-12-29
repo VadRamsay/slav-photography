@@ -85,7 +85,6 @@ nav a:hover {
 .contact-form {
     display: flex;
     flex-direction: column;
-    /* This allows us to center the button easier */
 }
 
 .contact-form label {
@@ -137,7 +136,6 @@ nav a:hover {
     background: linear-gradient(45deg, #7a7a7a, #111);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding-right: 45px;
-    /* Shift text to make room for icon */
 }
 
 /* The Icon (using an arrow) */
