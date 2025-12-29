@@ -12,7 +12,7 @@ Developed by Gabriel Ramsay, Slav Photography is a clean, professional web platf
 
 - Lead Generation Form: A customized contact form with hover-active animations and validation.
 
--Sticky Navigation: Easy site-wide access regardless of page scroll depth.
+- Sticky Navigation: Easy site-wide access regardless of page scroll depth.
 
 ## Technologies Used:
 
