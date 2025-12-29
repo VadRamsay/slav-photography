@@ -1,9 +1,11 @@
 Developed by Gabriel Ramsay, Slav Photography is a clean, professional web platform designed for clients to browse a portfolio, explore service packages, and seamlessly book photography sessions.
 
 Project Overview:
+
 This project serves as a digital storefront for a professional photographer. It balances a minimalist aesthetic with functional utility, focusing on a streamlined contact interface and a visual-first portfolio experience.
 
 Functionality:
+
 Dynamic Portfolio: A curated look at past photography work.
 
 Service Packages: Detailed breakdown of session types (Solo, Couple, Wedding).
@@ -22,6 +24,7 @@ Bootstrap: Utilized for core grid stability and responsive components.
 JavaScript: Used for form handling and state management. 
 
 Future Enhancements:
+
 Mobile Responsiveness: Implement CSS Media Queries to optimize the viewing experience for phones and tabblets. 
 
 Integrated Payment Gateway: Develop a checkout flow using various APIs to allow clients to pay for packages directly upon booking. *
