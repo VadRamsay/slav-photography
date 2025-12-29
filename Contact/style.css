@@ -189,7 +189,6 @@ nav a:hover {
     padding-right: 45px;
 }
 
-/* The Icon (using an arrow) */
 .contact-form button.submit::after {
     content: '→';
     position: absolute;
@@ -201,7 +200,6 @@ nav a:hover {
 .contact-form button.submit:hover::after {
     right: 25px;
     opacity: 1;
-    /* Slides into view */
 }
 
 #thank-you {
