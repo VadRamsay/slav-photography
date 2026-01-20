@@ -42,25 +42,26 @@ function executeSearch() {
 
 // API Search
 async function searchPhotos() {
-    const query = document.getElementById('photo-search-input').value.trim();
-    const resultsContainer = document.getElementById('search-results');
+    const query = document.getElementById('photo-search-input').value;
+    const results = document.getElementById('photo-results');
 
     if (query.length < 1) {
-        resultsContainer.innerHTML = '<p>Please try again!</p>';
+        results.innerHTML = '<p>Did you even type anything!</p>';
         return;
     }
 
-    resultsContainer.innerHTML = '<p>Loading photos...</p>';
+    results.innerHTML = '<p>Loading photos...</p>';
 
     try {
         const response = await fetch(`${UNSPLASH_API_URL}?query=${encodeURIComponent(query)}&per_page=8&client_id=${UNSPLASH_API_KEY}`);
+
         if (!response.ok) throw new Error('API request failed');
         const data = await response.json();
 
-        resultsContainer.innerHTML = '';
+        results.innerHTML = '';
 
         if (data.results.length === 0) {
-            resultsContainer.innerHTML = '<p>No photos found</p>';
+            results.innerHTML = '<p>No photos found</p>';
             return;
         }
 
@@ -76,11 +77,11 @@ async function searchPhotos() {
                     </div>
                 </a>
             `;
-            resultsContainer.appendChild(photoDiv);
+            results.appendChild(photoDiv);
         });
     } catch (error) {
         console.error('Error fetching from Unsplash:', error);
-        resultsContainer.innerHTML = '<p>Error fetching photos. Please check your API key.</p>';
+        results.innerHTML = '<p>Error fetching photos. Please check your API key.</p>';
     }
 }
 

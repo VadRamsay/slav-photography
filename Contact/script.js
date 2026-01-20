@@ -1,5 +1,5 @@
 document.querySelector(".contact-form").addEventListener("submit", function (e) {
-    e.preventDefault(); // prevents page reload
+    e.preventDefault();
     document.getElementById("thank-you").classList.remove("hidden");
 });
 
