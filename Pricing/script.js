@@ -6,17 +6,38 @@ const pages = [
     { name: "Home", url: "/Home/index.html", tags: "main, gallery" }
 ];
 
-const UNSPLASH_API_KEY = 'TPeoBJ2BnMz3HFXhIj8PhKIhf1N8pJi4tYfoVXNVjwM';
-const UNSPLASH_API_URL = 'https://api.unsplash.com/search/photos';
-
-
 function executeSearch() {
-    const query = $('#site-search').val().toLowerCase();
-    const $resultsContainer = $('#search-results-dropdown');
+    const query = document.getElementById('site-search').value.toLowerCase();
+    const resultsContainer = document.getElementById('search-results-dropdown');
 
-    $resultsContainer.empty();
+    resultsContainer.innerHTML = '';
 
     if (query.length < 1) {
-        $resultsContainer.hide();
+        resultsContainer.style.display = 'none';
         return;
     }
+
+    const matches = pages.filter(page =>
+        page.name.toLowerCase().includes(query) ||
+        page.tags.toLowerCase().includes(query)
+    );
+
+    if (matches.length > 0) {
+        matches.forEach(match => {
+            const div = document.createElement('a');
+            div.href = match.url;
+            div.classList.add('search-item');
+            div.innerHTML = `<strong>${match.name}</strong>`;
+            resultsContainer.appendChild(div);
+        });
+        resultsContainer.style.display = 'block';
+    } else {
+        resultsContainer.style.display = 'none';
+    }
+}
+
+document.addEventListener('click', (e) => {
+    if (!document.querySelector('.search-site').contains(e.target)) {
+        document.getElementById('search-results-dropdown').style.display = 'none';
+    }
+});
