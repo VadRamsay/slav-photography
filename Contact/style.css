@@ -58,7 +58,7 @@
     margin: 40px auto 0;
     padding: 14px 20px;
 
-    background: linear-gradient(45deg, #151f49c9, #2a3b8f);
+    background: linear-gradient(45deg, #3b3b3b, #535353);
     color: #ffffff;
     border: none;
     border-radius: 4px;
@@ -73,7 +73,7 @@
 }
 
 .contact-form button.submit:hover {
-    background: linear-gradient(45deg, #7a7a7a, #111);
+    background: linear-gradient(45deg, #3b3b3b, #bd1616);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     padding-right: 45px;
 }

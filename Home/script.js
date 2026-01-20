@@ -1,5 +1,3 @@
-
-
 const pages = [
     { name: "Portfolio - Landscapes", url: "/Portfolio/index.html", tags: "mountains, city, sun, waves" },
     { name: "Pricing & Packages", url: "/Pricing/", tags: "cost, silver, gold, wedding" },
@@ -9,7 +7,7 @@ const pages = [
 ];
 
 function executeSearch() {
-    const query = document.getElementById('site-search').value.toLowerCase();
+    const query = document.getElementById('site-search').value.toLowerCase().trim();
     const resultsContainer = document.getElementById('search-results-dropdown');
 
     resultsContainer.innerHTML = '';
