@@ -1,5 +1,5 @@
 const pages = [
-    { name: "Portfolio - Landscapes", url: "/Portfolio/index.html", tags: "mountains, city, sun, waves" },
+    { name: "Portfolio - Landscapes", url: "/Portfolio/index.html", tags: "mountains, city, sun, waves, ideas" },
     { name: "Pricing & Packages", url: "/Pricing/", tags: "cost, silver, gold, wedding" },
     { name: "About Gabe", url: "/About/index.html", tags: "biography, story, freshman" },
     { name: "Contact Me", url: "/Contact/index.html", tags: "email, phone, booking" },
