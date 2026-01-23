@@ -53,7 +53,12 @@ async function searchPhotos() {
     results.innerHTML = '<p>Loading photos...</p>';
 
     try {
-        const response = await fetch(`${UNSPLASH_API_URL}?query=${encodeURIComponent(query)}&per_page=8&client_id=${UNSPLASH_API_KEY}`);
+        const params = new URLSearchParams({
+            query: query,
+            per_page: 8,
+            client_id: UNSPLASH_API_KEY
+        });
+        const response = await fetch(UNSPLASH_API_URL + '?' + params);
 
         if (!response.ok) throw new Error('API request failed');
         const data = await response.json();
@@ -68,15 +73,19 @@ async function searchPhotos() {
         data.results.forEach(photo => {
             const photoDiv = document.createElement('div');
             photoDiv.classList.add('photo-card');
+
+            const description = photo.alt_description || 'Unsplash Photo';
+
             photoDiv.innerHTML = `
-                <a href="${photo.links.html}" target="_blank">
-                    <img src="${photo.urls.small}" alt="${photo.alt_description || 'Photo'}">
-                    <div class="photo-info">
-                        <p>${photo.alt_description || 'Unsplash Photo'}</p>
-                        <small>by ${photo.user.name}</small>
-                    </div>
-                </a>
-            `;
+        <a href="${photo.links.html}" target="_blank">
+            <img src="${photo.urls.small}" alt="${description}">
+            <div class="photo-info">
+                <p>${description}</p>
+                <small>by ${photo.user.name}</small>
+            </div>
+        </a>
+    `;
+
             results.appendChild(photoDiv);
         });
     } catch (error) {
