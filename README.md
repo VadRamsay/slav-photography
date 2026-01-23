@@ -22,7 +22,9 @@ Developed by Gabriel Ramsay, Slav Photography is a clean, professional web platf
 
 - Bootstrap: Utilized for core grid stability and responsive components.
 
-- JavaScript: Used for form handling and state management. 
+- JavaScript: Used for form handling and state management.
+
+- JSON: Used for communicating between the browser and server via API. 
 
 ## Future Enhancements:
 
