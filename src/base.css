@@ -1,4 +1,14 @@
 /* Global Styles */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -116,21 +126,47 @@ nav a:hover {
     color: #1e3f66;
 }
 
+/* Footer */
 
-html,
-body,
-#root {
-    min-height: 100vh;
+.footer {
+    position: relative;
+    margin-top: 50px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#root {
+.footer-images {
     display: flex;
-    flex-direction: column;
+    overflow: hidden;
 }
 
-footer {
+.footer-images img {
+    flex: 1;
+    height: 200px;
+    object-fit: cover;
+    min-width: 0;
+}
+
+.footer-banner {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 50px;
+    gap: 40px;
+    align-items: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.copyright {
     text-align: center;
-    padding: 30px;
+    padding: 15px;
     background: #fafafa;
-    margin: auto;
+    font-size: 14px;
+    color: #888;
 }

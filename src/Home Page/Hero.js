@@ -9,7 +9,7 @@ function Hero() {
                     I get to share this passion with the world. Photography has a way of helping a person communicate
                     their truest perspective. My desire is to help my clients capture theirs!<br></br>
                 </p>
-                <a href="/Contact/index.html" className="contact-btn">Get In Touch</a>
+                <a href="/" className="contact-btn">Get In Touch</a>
             </div>
         </section>
     );

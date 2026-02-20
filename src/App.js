@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Header';
 import Footer from './Footer';
 import Home from './Home Page/Home';
+import About from './About Page/About';
 import './base.css';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </BrowserRouter>
